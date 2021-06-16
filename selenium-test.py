@@ -3,6 +3,7 @@ from register import registerTest
 from book import bookTest
 from delete import deleteTest
 from logout import logoutTest
+from remove import removeTest
 import os
 from selenium import webdriver
 
@@ -17,6 +18,7 @@ def main():
     registerTest("test1@test1.pl", loginName, "Test1 Test1", password, "223456789", driver)
     loginTest(loginName, password, driver)
     bookTest(driver)
+    removeTest(driver)
     logoutTest(driver)
 
     print("Admin login, ")
